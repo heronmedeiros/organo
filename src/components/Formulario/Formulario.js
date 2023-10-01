@@ -5,7 +5,7 @@ import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 import "./Formulario.css";
 
-export const Formulario = () => {
+export const Formulario = ({ aoColaboradorCadastrado }) => {
 
   const times = [
     'Progamação',
@@ -24,7 +24,12 @@ export const Formulario = () => {
 
   const aoSalvar = (event) => {
     event.preventDefault();
-    console.log("form foi submetido =>", nome, cargo, imagem, time);
+    aoColaboradorCadastrado({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
   };
 
   return (
