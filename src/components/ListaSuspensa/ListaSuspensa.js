@@ -9,6 +9,7 @@ export const ListaSuspensa = ({ label, itens, obrigatorio, valor, aoAlterado }) 
         onChange={ event => aoAlterado(event.target.value) }
         required={ obrigatorio }
       >
+      <option value=""></option>
         { itens.map(item => {
           return <option
             key={ item }>

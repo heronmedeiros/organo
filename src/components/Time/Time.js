@@ -15,7 +15,7 @@ export const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
       <div className='colaboradores'>
         {colaboradores.map( colaborador => {
           return (
-            <Colaborador key={colaborador.nome} colaborador={colaborador}/>
+            <Colaborador key={colaborador.nome} colaborador={colaborador} corDeFundo={corPrimaria}/>
           )
         })}
       </div>
