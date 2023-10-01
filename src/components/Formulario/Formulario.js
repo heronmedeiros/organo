@@ -5,17 +5,7 @@ import ListaSuspensa from "../ListaSuspensa";
 import Botao from "../Botao";
 import "./Formulario.css";
 
-export const Formulario = ({ aoColaboradorCadastrado }) => {
-
-  const times = [
-    'Progamação',
-    'Front-End',
-    'Data Science',
-    'Devops',
-    'Ux e Design',
-    'Mobile',
-    'Inovação e Gestão',
-  ];
+export const Formulario = ({ aoColaboradorCadastrado, times }) => {
 
   const [nome, setNome] = useState('');
   const [cargo, setCargo] = useState('');
