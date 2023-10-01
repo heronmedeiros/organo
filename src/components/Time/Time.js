@@ -10,7 +10,7 @@ export const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
   }
 
   return (
-    <section className='time' style={estiloSection}>
+    (colaboradores.length >0) ? <section className='time' style={estiloSection}>
       <h3 style={estiloH3}>{nome}</h3>
       <div className='colaboradores'>
         {colaboradores.map( colaborador => {
@@ -20,5 +20,6 @@ export const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
         })}
       </div>
     </section>
+    : ''
   )
 }

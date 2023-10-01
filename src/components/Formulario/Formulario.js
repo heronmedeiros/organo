@@ -14,12 +14,18 @@ export const Formulario = ({ aoColaboradorCadastrado, times }) => {
 
   const aoSalvar = (event) => {
     event.preventDefault();
+
     aoColaboradorCadastrado({
       nome,
       cargo,
       imagem,
       time,
     });
+
+    setNome('');
+    setCargo('');
+    setImagem('');
+    setTime('');
   };
 
   return (
