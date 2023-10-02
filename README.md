@@ -9,7 +9,7 @@ Rápida descrição do objetivo de fazer esse projeto
 | :rocket: URL         | organo-heronmedeiros.vercel.app/
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+![](https://raw.githubusercontent.com/heronmedeiros/organo/main/capa.png#vitrinedev)
 
 ## Detalhes do projeto
 
